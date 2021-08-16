@@ -6,11 +6,11 @@ app = Flask(__name__, static_folder='./templates/images')
 
 @app.route('/')
 def test1():
-    return render_template('checkbox.html')
-
-@app.route('/index')
-def test2():
     return render_template('index.html')
+
+@app.route('/input')
+def test2():
+    return render_template('checkbox.html')
 
 @app.route('/result', methods=['POST','GET'])
 def result():
